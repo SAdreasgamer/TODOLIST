@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        /* Button Hover Effect */
+        .animated-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .animated-button:hover {
+            background-color: #2ecc71;
+            color: black;
+        }
+
+        /* Image Scaling on Hover */
+        .image-container img {
+            width: 300px;
+            transition: transform 0.3s;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Text Size Transition */
+        h1 {
+            transition: font-size 0.3s;
+        }
+        h1:hover {
+            font-size: 3rem;
+        }
+
+        /* Smooth Border Transition */
+        .border-box {
+            width: 200px;
+            height: 100px;
+            margin: 20px auto;
+            border: 2px solid #e74c3c;
+            transition: border-color 0.3s;
+        }
+        .border-box:hover {
+            border-color: #f1c40f;
+        }
+
+        /* Opacity Effect */
+        .fade-text {
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+        .fade-text:hover {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover Over Me</h1>
+    <button class="animated-button">Hover Me</button>
+    <div class="image-container">
+        <img src="https://imgd-ct.aeplcdn.com/320x200/n/cw/ec/139651/curvv-exterior-right-front-three-quarter.jpeg?isig=0&q=80" alt="Sample Image">
+    </div>
+    <div class="border-box"></div>
+    <p class="fade-text">Hover over this text to change opacity.</p>
+</body>
+</html>
